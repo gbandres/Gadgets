@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009">
+
+  <!-- Support info to show in the marketplace & control panel -->
+  <Support>
+    <!-- URL for application setup as an optional redirect during the install -->
+    <Link rel="setup" href="http://example.com/google/setup.php?domain=${DOMAIN_NAME}" />
+
+    <!-- URL for application configuration, accessed from the app settings
+     page in the control panel -->
+    <Link rel="manage" href="http://example.com/google/admin.php?domain=${DOMAIN_NAME}" />
+
+    <!-- URL explaining how customers get support. -->
+    <Link rel="support" href="http://example.com/google/support.php" />
+
+    <!-- URL that is displayed to admins during the deletion process,
+     to specify policies such as data retention, how to claim accounts, etc. -->
+    <Link rel="deletion-policy" href="http://example.com/google/deletion-policy.php" />
+  </Support>
+
+  <!-- Name and description pulled from message bundles -->
+  <Name>gmail2jira_sese</Name>
+  <Description>Aplicación para la creación de tareas en jira desde correos de gmail</Description>
+
+  <!-- Show this link in Google's universal navigation for all users -->
+  
+  <!--
+  <Extension id="navLink" type="link">
+    <Name>HelloWorld</Name>
+    <Url>http://example.com/home.php?from=google&domain=${DOMAIN_NAME}</Url>
+  </Extension>
+  -->
+  
+  <!-- Declare our OpenID realm so our app is white listed -->
+  <Extension id="realm" type="openIdRealm">
+    <Url>http://gruposese.com</Url>
+  </Extension>
+
+<!--  EXTRACTOR
+  Configures an extractor that will be used to get context to
+  trigger the gadget.  If the gadget uses multiple extractors, include a
+  separate <Extension> tag for each one.
+  id - give the extractor any name you like.
+  <Name> - a human-readable name for display to Google Apps administrators.
+  <Url> - the extractor ID, like google.com:HelloWorld.
+  <Param> - an extractor output field & regular expression
+  to filter the extractor's default output.
+  <Triggers> - the same gadget id that is defined
+  in the gadget element below.
+  <Scope> - a scope ID defined in a scope element below. If the extractor
+  can access content in multiple email parts, include a separate <Scope>
+  tag for each one -- whether your gadget uses them all or not. -->
+<Extension id="para" type="contextExtractor">
+  <Name>Email para</Name>
+  <Url>google.com:RecipientToEmailExtractor</Url>
+  <Param name="emailTo" value="tic.soporte@gruposese.com"/>
+  <Triggers ref="mailParaTicSoporte"/>
+  <Scope ref="toScope"/>
+  <Container name="mail"/>
+</Extension>
+
+<!--  GADGET
+  Configures the gadget spec.
+  id - give the gadget any name you like.
+  <Name> - a human-readable name for display to Google Apps administrators.
+  <Url> - the location of the gadget spec. -->
+
+<Extension id="gmail2jiraSese" type="gadget">
+  <Name>Crear como tarea en Jira</Name>
+  <Url>https://code.google.com/p/gmail2jira/gmail2jira.gadget.xml</Url>
+  <Container name="mail"/>
+  <!-- Uncomment this to enable Caja. -->
+  <!-- Param name="caja" value="enabled"/> -->
+</Extension>
+
+<!--  SCOPE
+  Configures which email part the extractor(s) can access.
+  If the extractor can access content in multiple email parts,
+  include a separate <Scope> tag for each one -- whether your
+  gadget uses them all or not.
+  id - give the scope any name you like.
+  <Url> - a URI from the documented list of supported scopes.
+  If using a predefined extractor, use the scope(s) documented
+  for that extractor.
+  <Reason> - text to display to Google Apps domain administrators
+  so that they can decide whether to grant access. -->
+
+<Scope id="emailTo">
+  <Url>tag:google.com,2010:auth/contextual/extractor/TO_ADDRESS</Url>
+  <Reason>Busca en el campo Para del email</Reason>
+</Scope>
+
+</ApplicationManifest>
+

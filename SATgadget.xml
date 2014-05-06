@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Soporte" description="Gadget para comunicación con el Departamento de Sistemas" author="Javier Arce" author_email="javier.arce@gruposese.com" height="180" />
+  <Content type="html">
+  <![CDATA[
+  <style type="text/css">
+.submit {
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: default;
+
+}
+#submitpad {
+  padding: 5px;
+  background-color: #ff0000;
+  margin: 0px;
+  border-width: 3px;
+  border-color: #ff0000;
+  border-spacing: 0;
+}
+</style>
+  <div id="satcontainer" style="text-align:center;">
+  <script type="text/javascript">
+
+  function link(url){
+     window.open(url, '_blank', '');
+     return false;
+  }
+
+  </script>
+
+  <table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td nowrap id="submitpad" 
+onMouseDown="this.style.backgroundColor='#009900'" 
+onMouseOver="this.style.backgroundColor='#009900'" 
+onMouseOut="this.style.backgroundColor='#ff0000'"> 
+<span style="cursor:pointer;"> 
+  <input style="cursor:pointer; font-size: 16px;width: 120px;height: 90;white-space: pre-wrap;display: block;text-align: center;font-weight: bold;" type=submit name="submit"  value="Solicitar Asistencia Técnica" onClick="link('https://docs.google.com/a/gruposese.com/spreadsheet/viewform?hl=en_US&formkey=dGh6TTNzcXhaY0xkeFh1UDRJZE1sSUE6MQ#gid=0')">
+ </span> 
+</td>
+</tr>
+<tr> 
+<td nowrap id="submitpad" 
+onMouseDown="this.style.backgroundColor='#009900'" 
+onMouseOver="this.style.backgroundColor='#009900'" 
+onMouseOut="this.style.backgroundColor='#ff0000'"> 
+<span style="cursor:pointer;"> 
+  <input style="cursor:pointer; font-size: 16px;width: 120px;height: 30px;white-space: pre-wrap;display: block;text-align: center;font-weight: bold;" type=submit name="submit"  value="Peticiones" onClick="link('https://docs.google.com/a/gruposese.com/spreadsheet/viewform?hl=es&formkey=dEZpRHRNUUtkZUdPWGlWVGxBLVBFVlE6MQ#gid=0')">
+ </span> 
+</td>
+</tr>
+</table>
+   
+  </div>
+  ]]>
+  </Content>
+</Module>

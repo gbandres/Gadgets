@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="CALIDAD" />
+<Content type="html"><![CDATA[
+<html>
+<head>
+<script  type="text/javascript"  src="http://calidad.gruposese.com/s/es_ES-x888wa/713/3/1.2.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=f09e82e3"></script>
+
+<script language="JavaScript" type="text/JavaScript">
+window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+    
+            // ==== Feedback collector ====
+           'f09e82e3' : {
+                // === custom trigger function ===
+                triggerFunction : function( showCollectorDialog ) {
+                    $('#transporte-button').click( function(e) {
+                        //e.preventDefault();
+                        showCollectorDialog();
+                    });
+                }
+}
+});
+
+function foo(){
+document.getElementById('transporte-button').click();
+};
+</script>
+</head>
+<body onload="foo();">
+<div a href='#' id='transporte-button'>prueba</div>
+</body>
+</html>
+]]></Content>
+</Module>

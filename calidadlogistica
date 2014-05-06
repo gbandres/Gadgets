@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="" />
+<Content type="html"><![CDATA[
+<html>
+<head>
+
+<script type="text/javascript" src="https://calidad.gruposese.com/s/d41d8cd98f00b204e9800998ecf8427e/es_ESoouekp-1988229788/6260/6/1.4.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=b8941733"></script>
+
+<script language="JavaScript" type="text/JavaScript">
+window.ATL_JQ_PAGE_PROPS = {
+"triggerFunction": function(showCollectorDialog) {
+//Requries that jQuery is available!
+jQuery("#logistica-button").click(function(e) {
+e.preventDefault();
+showCollectorDialog();
+});
+}
+};
+var f = new Date();
+window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+fieldValues: {
+summary : 'INCIDENCIA LOGISTICA'
+//summary : 'Ticket#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+
+}
+});
+
+function foo(){
+document.getElementById('logistica-button').click();
+};
+</script>
+</head>
+<body onload="foo();">
+<div a href='#' id='logistica-button'></div>
+</body>
+</html>
+]]></Content>
+</Module>

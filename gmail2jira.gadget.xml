@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Crear en Jira" description="Gadget para creación de tareas en Jira a partir de emails" author="Javier Arce" author_email="javier.arce@gruposese.com" height="350" />
+  <Content type="html">
+  <![CDATA[
+  <div id="jiracontainer"
+    style="text-align:center;">
+  </div>
+  <script type="text/javascript">
+
+  function enviar(){
+
+	var seleccion = document.getElementById('asignar').value;
+  
+	if (seleccion == 'undefined') {
+
+	  var asignacion = "miguel.abarca";
+	  var Proyecto = "10090";
+
+	} else {  
+	  
+	  if ( seleccion == "AXON" ) {
+		
+		var asignacion = "miguel.abarca";
+		var Proyecto = "10090";
+		
+	  } else if ( seleccion == "NAVISION" ) {
+		
+		var asignacion = "carolina.gan";
+		var Proyecto = "10090";
+		
+	  } else if ( seleccion == "TELEFONÍA" ) {
+		
+		var asignacion = "guillermo.bandres";
+		var Proyecto = "10043";
+		
+	  } else if ( seleccion == "OTROS" ) {
+		
+		var asignacion = "miguel.borraz";
+		var Proyecto = "10043";
+		
+	  }
+
+	}   
+  
+  var userEmail = 'javier.arce@gruposese.com';
+  var Detalle = 'javier.arce@gruposese.com';
+  var Tfno = '';
+  
+  var headers = {"X-Atlassian-Token": "no-check"};
+  var row = 0;
+
+	function makePOSTRequest(url, postdata) {
+	   var params = {};
+	   postdata = gadgets.io.encodeValues(postdata);
+	   params[gadgets.io.RequestParameters.METHOD] = gadgets.io.MethodType.POST;
+	   params[gadgets.io.RequestParameters.POST_DATA]= postdata;
+	   gadgets.io.makeRequest(url, response, params); 
+	};
+	function response(obj) {
+	   output(obj.text); 
+	};
+ 
+  var params = "pid="+Proyecto+"&issuetype=3&summary=Ticket#2012."+row+"%20-%20"+encodeURI(Detalle.substr(0,100))+"&customfield_10270="+Tfno+"&customfield_10172="+userEmail+"&reporter=javier.arce&assignee="+asignacion+"&os_username=javier.arce&os_password=gominola&description="+encodeURI(Detalle);
+    
+  var options =
+    {
+      "headers" : headers,
+      "method" : "post",
+      "payload" : params
+    };
+  
+  makePOSTRequest("http://gp.nerviaconsultores.com:8082/secure/CreateIssueDetails.jspa", options);
+
+  }
+
+  </script>
+  <br />
+  
+  <div id="asistencia" class="aic"><div class="z0"><div class="T-I J-J5-Ji T-I-KE L3" role="button" tabindex="0" style="-webkit-user-select: none; " gh="cm">ASISTENCIA</div></div></div>
+  
+  <div style="text-align: center;">
+	<label class="ss-q-title" for="asignar">INCIDENCIA EN:<span class="ss-required-asterisk">*</span></label>
+	<select name="asignar" id="asignar">
+		<option value="AXON">AXON</option> 
+		<option value="NAVISION">NAVISION</option> 
+		<option value="TELEFONÍA">TELEFONÍA</option> 
+		<option value="OTROS">OTROS</option>
+	</select>
+    <input type=submit value="Crean en Jira ->" onClick="enviar()">
+  </div>
+  ]]>
+  </Content>
+</Module>

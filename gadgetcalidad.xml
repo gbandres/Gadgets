@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>"
+  <ModulePrefs title="SESE Calidad" description="INC Gadget" author="Guillermo Bandres" author_email="guillermo.bandres@gruposese.com" height="80" width="150"  />
+  <Content type="html">
+  <![CDATA[
+
+<head>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<style>
+
+body {
+  background-color: transparent;
+}
+
+  div.caja {
+    display: block;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    height: 37px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 0px;
+    margin-top: 0px;
+    position: static;
+    width: 115px;
+  }
+  a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+border:0px none;
+  }
+  div.caja1 {
+  display: block;
+  font-family: arial, sans-serif;
+ font-size: 16px;
+   height: 29px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   padding-bottom: 8px;
+   padding-left: 0px;
+   padding-right: 4px;
+   padding-top: 0px;
+   position: static;
+   width: 115px;
+  }
+  div.boton {
+   -webkit-user-select: none;
+   background-color: #2d3ca5;
+   background-image: -webkit-linear-gradient(top, #2f3ea, #2d3ca5);
+   border-bottom-color: transparent;
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   border-left-color: transparent;
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-right-color: transparent;
+   border-right-style: solid;
+   border-right-width: 1px;
+   border-top-color: transparent;
+   border-top-left-radius: 2px;
+   border-top-right-radius: 2px;
+   border-top-style: solid;
+   border-top-width: 1px;
+   color: white;
+   cursor: default;
+   display: inline-block;
+   font-family: arial, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   height: 27px;
+   line-height: 27px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   min-width: 97px;
+   outline-color: white;
+   outline-style: none;
+   outline-width: 0px;
+   padding-bottom: 0px;
+   padding-left: 8px;
+   padding-right: 8px;
+   padding-top: 0px;
+   position: relative;
+   text-align: center;
+   text-shadow: rgba(0, 0, 0, 0.0976563) 0px 1px 0px;
+   text-transform: uppercase;
+   width: 120px;
+   cursor:pointer;   
+  }
+  div.boton:hover {
+   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+   box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+   background-color: #203098;
+   background-image: -webkit-linear-gradient(top,#2f3eac,#17278a);
+   background-image: -moz-linear-gradient(top,#2f3eac,#17278a);
+   background-image: -ms-linear-gradient(top,#2f3eac,#17278a);
+   background-image: -o-linear-gradient(top,#2f3eac,#17278a);
+   background-image: linear-gradient(top,#2f3eac,#17278a);
+   border: 1px solid #203098;
+   border-image: initial;
+
+  }
+  .boton_input {
+   -webkit-user-select: none;
+   background-color: #2d3ca5;
+   background-image: url(https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png);
+		-webkit-linear-gradient(top, #2f3ea, #2d3ca5);
+   background-repeat: no-repeat;
+   background-position: 12px 3px;
+   border-bottom-color: transparent;
+   border-bottom-left-radius: 2px;
+   border-bottom-right-radius: 2px;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   border-left-color: transparent;
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-right-color: transparent;
+   border-right-style: solid;
+   border-right-width: 1px;
+   border-top-color: transparent;
+   border-top-left-radius: 2px;
+   border-top-right-radius: 2px;
+   border-top-style: solid;
+   border-top-width: 1px;
+   color: white;
+   cursor: default;
+   display: inline-block;
+   font-family: arial, sans-serif;
+   font-size: 11px;
+   font-weight: bold;
+   height: 27px;
+   line-height: 27px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 0px;
+   min-width: 97px;
+   outline-color: white;
+   outline-style: none;
+   outline-width: 0px;
+   padding-bottom: 0px;
+   padding-left: 8px;
+   padding-right: 8px;
+   padding-top: 0px;
+   position: relative;
+   text-align: right;
+   text-shadow: rgba(0, 0, 0, 0.0976563) 0px 1px 0px;
+   text-transform: uppercase;
+   width: 120px;
+   cursor:pointer;   
+  }
+  .styled-select {
+  
+  width: 120px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: 
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+  
+  </style> 
+
+<!-- TRASNPORTE --> 
+<script type="text/javascript" src="http://calidad.gruposese.com/s/es_ES-x888wa/713/3/1.2.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=f09e82e3"></script>
+<!-- ALAGON --> 
+<script type="text/javascript" src="http://calidad.gruposese.com/s/es_ES-x888wa/713/3/1.2.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=a4858726"></script>
+<!-- LOGISTICA --> 
+<script type="text/javascript" src="http://calidad.gruposese.com/s/es_ES-x888wa/713/3/1.2.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=b8941733"></script>
+<!-- SVR INDUSTRIALES --> 
+<script type="text/javascript" src="http://calidad.gruposese.com/s/es_ES-x888wa/713/3/1.2.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=ce727975"></script>
+<!--  --> 
+
+
+<!-- We will customise JIRA in the following script tag -->
+ 
+<script type="text/javascript">
+    // safely use jquery here since the issue collector will load it for you
+    var f = new Date();
+	$(document).ready(function() {
+		
+        window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+		
+            // ==== Feedback collector ====
+           'f09e82e3' : {
+                // === custom trigger function ===
+                triggerFunction : function( showCollectorDialog ) {
+                    $('#transporte-button').click( function(e) {
+                        //e.preventDefault();
+                        showCollectorDialog();
+                    });
+                }
+                // === default and hidden field values ===
+                , fieldValues: {
+				summary : 'TRANPORTE#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+				priority : '2'
+                }
+				}
+            // ==== Bug collector ====
+            , 'a4858726' : {
+                // === custom trigger function ===
+                triggerFunction : function( showCollectorDialog ) {
+                    $('#alagon-button').click( function(e) {
+                        e.preventDefault();
+                        showCollectorDialog();
+                    });
+                }
+                // === default and hidden field values ===
+                , fieldValues: {
+				summary : 'ALAGON#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+				priority : '2'
+                }
+			}
+			, 'b8941733' : {
+                // === custom trigger function ===
+                triggerFunction : function( showCollectorDialog ) {
+                    $('#logistica-button').click( function(e) {
+                        e.preventDefault();
+                        showCollectorDialog();
+                    });
+                }
+                // === default and hidden field values ===
+                , fieldValues: {
+				summary : 'LOGISTICA#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+				priority : '2'
+                }
+			}
+			, 'ce727975' : {
+                // === custom trigger function ===
+                triggerFunction : function( showCollectorDialog ) {
+                    $('#industriales-button').click( function(e) {
+                        e.preventDefault();
+                        showCollectorDialog();
+                    });
+                }
+                // === default and hidden field values ===
+                , fieldValues: {
+				summary : 'INDUSTRIALES#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+				priority : '2'
+                }
+			
+			}
+    }
+)});
+
+function button() 
+{
+
+  var id = document.getElementById('proyecto').value;
+  if (id == '1') {
+		
+		window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/transporte', '_blank');
+  
+  }
+  if (id=='2') {
+  
+	  window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/alagon', '_blank');
+  
+  }
+  if (id=='3') {
+  
+		window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/logistica', '_blank');
+  
+  }
+  if (id=='4') {
+  
+		window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/serv-industriales', '_blank');
+  
+  }
+  if (id=='5') {
+  
+		window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/bonavia', '_blank');
+  
+  }
+  }
+</script>
+</head>	
+	
+    
+
+  <div id='satcontainer' style='text-align:center;overflow:visible'> 
+<!--<div class='caja' id='transporte'>
+	<div class='caja1'>
+	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='transporte-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - TRANSPORTE</span></a></div>
+	</div>
+	</div>
+	<div class='caja' id='alagon'>
+	<div class='caja1'>
+	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='alagon-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - ALAGON</span></a></div>
+	</div>
+	</div>
+	<div class='caja' id='logistica'>
+	<div class='caja1'>
+	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='logistica-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - LOGISTICA</span></a></div>
+	</div>
+	</div>
+	<div class='caja' id='industriales'>
+	<div class='caja1'>
+	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='industriales-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - SERV. INDUSTRIALES </span></a></div>
+	</div>
+	</div>-->
+	<div a id='transporte-button'></div>
+	<div a id='alagon-button'></div>
+	<div a id='logistica-button'></div>
+	<div a id='industriales-button'></div>
+	<div class='caja' id='form'>
+	<form name="myform" style='height: 15px;'>
+	<select class='styled-select' name="option" id="proyecto">
+		<option value="1">TRANSPORTE</option>
+		<option value="2">ALAGON</option>
+		<option value="3">LOGISTICA</option>
+		<option value="4">SERV. INDUSTRIALES</option>
+    <option value="5">BONAVIA</option>
+		</select>
+	</form>
+	
+	<input type="button"  class='boton_input' tabindex='0' name="submit" value="Selecionar" onclick="button()"/>
+	
+	
+	</div>
+	</div>
+	
+
+
+
+
+  ]]>
+  </Content>
+</Module>
+
