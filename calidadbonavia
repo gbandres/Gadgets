@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="CALIDAD BONAVIA" description="CALIDAD BONAVIA" author="Guillermo Bandres" author_email="guillermo.bandres@gruposese.com" />
+  <Content type="html">
+    <![CDATA[
+      <html>
+<head>
+<script type="text/javascript" src="https://calidad.gruposese.com/s/d41d8cd98f00b204e9800998ecf8427e/es_ESoouekp-1988229788/6260/6/1.4.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=5eb0bd16"></script>
+
+<script language="JavaScript" type="text/JavaScript">
+window.ATL_JQ_PAGE_PROPS = {
+"triggerFunction": function(showCollectorDialog) {
+//Requries that jQuery is available!
+jQuery("#bonavia-button").click(function(e) {
+e.preventDefault();
+showCollectorDialog();
+});
+}
+};
+var f = new Date();
+window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+fieldValues: {
+summary : 'INCIDENCIA BONAVIA'
+//summary : 'Ticket#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+//priority : '2'
+}
+});
+
+function foo(){
+document.getElementById('bonavia-button').click();
+};
+</script>
+</head>
+<body onload="foo();">
+<div a href='#' id='bonavia-button'></div>
+</body>
+</html>
+    ]]>
+  </Content>
+</Module>
+
+
+
