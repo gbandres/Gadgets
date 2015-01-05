@@ -277,7 +277,7 @@ function button()
   }
   if (id=='2') {
   
-	  window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/alagon', '_blank');
+	  	window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/cc', '_blank');
   
   }
   if (id=='3') {
@@ -307,9 +307,9 @@ function button()
 	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='transporte-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - TRANSPORTE</span></a></div>
 	</div>
 	</div>
-	<div class='caja' id='alagon'>
+	<div class='caja' id='cc'>
 	<div class='caja1'>
-	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='alagon-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - ALAGON</span></a></div>
+	<div class='boton' gh='cm' role='button' style='-webkit-user-select: none; width: 165px;' tabindex='0'><a href='#'id='alagon-button'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png'  style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block;'>INC - CENTROS CONSOLIDACION</span></a></div>
 	</div>
 	</div>
 	<div class='caja' id='logistica'>
@@ -323,14 +323,14 @@ function button()
 	</div>
 	</div>-->
 	<div a id='transporte-button'></div>
-	<div a id='alagon-button'></div>
+	<div a id='cc-button'></div>
 	<div a id='logistica-button'></div>
 	<div a id='industriales-button'></div>
 	<div class='caja' id='form'>
 	<form name="myform" style='height: 15px;'>
 	<select class='styled-select' name="option" id="proyecto">
 		<option value="1">TRANSPORTE</option>
-		<option value="2">ALAGON</option>
+		<option value="2">CENTRO CONSOLIDACION</option>
 		<option value="3">LOGISTICA</option>
 		<option value="4">SERV. INDUSTRIALES</option>
     <option value="5">BONAVIA</option>
