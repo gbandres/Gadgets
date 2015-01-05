@@ -19,7 +19,7 @@
         var f = new Date();
 		window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
 		fieldValues: {
-        summary : 'INCIDENCIA ALAGON'
+        summary : 'INCIDENCIA CENTRO CONSOLIDACION'
         //summary: 'Ticket#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
         //priority : '2'
     }                  
