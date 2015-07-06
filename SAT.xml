@@ -124,7 +124,7 @@ border:0px none;
    
 <div class='boton' gh='cm' role='button' style='-webkit-user-select: none; position:relative; height:60px;margin-left: 0px;'>
   <a href='http://get.teamviewer.com/fw3mkb4' style='text-decoration:none;' target="_blank">
-    <img src='http://www.therobpope.com/images/TeamViewerIcon.png' alt='TeamViewer para soporte remoto' title='TeamViewer para soporte remoto' border='0' width='60' height='60' style='position:absolute; top:0px; left:-5px'>
+    <img src='http://www.teamviewer.com/images/opengraph/teamviewer-icon200x200.png' alt='TeamViewer para soporte remoto' title='TeamViewer para soporte remoto' border='0' width='60' height='60' style='position:absolute; top:0px; left:-5px'>
     <span style='position:absolute; top:20px; left:43px; display:block; cursor:pointer; font-family:Arial; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;'>
       Soporte remoto
     </span>
