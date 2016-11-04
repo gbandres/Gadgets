@@ -114,7 +114,7 @@ border:0px none;
  
 <div class='caja' id='asistencia'>
  <div class='caja1'>
- <div class='boton' gh='cm' role='button' style='-webkit-user-select: none;' tabindex='0'><a target='_blank' href='https://docs.google.com/a/gruposese.com/spreadsheet/viewform?hl=es&pli=1&formkey=dFBMQjktMmdXTmtQRFdiWkF2Zjhhc0E6MQ#gid=0'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png' alt='Solicitar Asistencia Tecnica' style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='position:absolute; left:35px; min-height: 28px; vertical-align: middle; display: block;'>SOLICITUDES</span></a></div>
+ <div class='boton' gh='cm' role='button' style='-webkit-user-select: none;' tabindex='0'><a target='_blank' href='https://docs.google.com/a/gruposese.com/forms/d/e/1FAIpQLSeM9AuOAEmOGCXEMxWz62k0DF20wQmRhNGaEOmG3fb73Yy06w/viewform'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png' alt='Solicitar Asistencia Tecnica' style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='position:absolute; left:35px; min-height: 28px; vertical-align: middle; display: block;'>SOLICITUDES</span></a></div>
  </div>
 </div>
    
