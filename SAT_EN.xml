@@ -1,7 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>"
-  <ModulePrefs title="SESE Sistemas" description="SAT Gadget" author="Javier Arce" author_email="javier.arce@gruposese.com" height="120" width="150"  />
+  <ModulePrefs title="SESE IT" description="SAT Gadget" author="Guillermo Bandres" author_email="guillermo.bandres@gruposese.com" height="120" width="150"  />
   <Content type="html">
   <![CDATA[
 <head>
