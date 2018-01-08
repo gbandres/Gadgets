@@ -121,7 +121,7 @@ border:0px none;
 
 <div class='caja' id='estructura'>
  <div class='caja1'>
- <div class='boton' gh='cm' role='button' style='-webkit-user-select: none;' tabindex='0'><a target='_blank' href='https://docs.google.com/forms/d/17R0DVFECrzGzDeGciqmhecdVD4KozjtiVFPqd7zFIDk/viewform?edit_requested=true'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/estructura.png' alt='Alta estructura' style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block; margin-left: 30px;'>Solicitud de estructura</span></a></div>
+ <div class='boton' gh='cm' role='button' style='-webkit-user-select: none;' tabindex='0'><a target='_blank' href='https://docs.google.com/forms/d/17R0DVFECrzGzDeGciqmhecdVD4KozjtiVFPqd7zFIDk/viewform?edit_requested=true'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/estructura.png' alt='Alta estructura' style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='min-height: 28px; vertical-align: middle; display: block; margin-left: 30px;'>Solicitud estructura</span></a></div>
  </div>
 </div>
 
