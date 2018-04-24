@@ -4,9 +4,9 @@
 <Content type="html"><![CDATA[
 <html>
 <head>
-<script type="text/javascript" src="https://calidad.gruposese.com/s/d41d8cd98f00b204e9800998ecf8427e/es_ESoouekp-1988229788/6260/6/1.4.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?collectorId=ce727975"></script>
+<script type="text/javascript" src="https://calidad.gruposese.com/s/ce73e9afc65ede5b96f079d9789d08ed-T/p1ho2y/73015/f97ffca04e2f096000db7442a2dea80d/2.0.23/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=es-ES&collectorId=7f6064a2"></script>
 
-<script language="JavaScript" type="text/JavaScript">
+<script type="text/JavaScript">
 window.ATL_JQ_PAGE_PROPS = {
 "triggerFunction": function(showCollectorDialog) {
 //Requries that jQuery is available!
