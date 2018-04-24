@@ -290,11 +290,6 @@ function button()
 		window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/incidencias-de-servicios-industriales', '_blank');
   
   }
-  if (id=='5') {
-  
-		window.open('https://sites.google.com/a/gruposese.com/calidad-prl/4-gestion-de-incidencias/bonavia', '_blank');
-  
-  }
   }
 </script>
 </head>	
@@ -333,7 +328,6 @@ function button()
 		<option value="2">NO CONFORMIDADES</option>
 		<option value="3">LOGISTICA</option>
 		<option value="4">SERV. INDUSTRIALES</option>
-    <option value="5">BONAVIA</option>
 		</select>
 	</form>
 	
