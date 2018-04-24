@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="" />
+<Content type="html"><![CDATA[
+<html>
+<head>
+	<script type="text/javascript" src="https://calidad.gruposese.com/s/ce73e9afc65ede5b96f079d9789d08ed-T/p1ho2y/73015/f97ffca04e2f096000db7442a2dea80d/2.0.23/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=es-ES&collectorId=5e679f6a"></script>
+
+    <script type="text/javascript">window.ATL_JQ_PAGE_PROPS =  {
+	"triggerFunction": function(showCollectorDialog) {
+		//Requires that jQuery is available! 
+		jQuery("#nc-button").click(function(e) {
+			e.preventDefault();
+			showCollectorDialog();
+		});
+
+            }
+        };
+        var f = new Date();
+		window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+		fieldValues: {
+        summary : 'INCIDENCIA NO CONFORMIDAD'
+        //summary : 'Ticket#'+f.getFullYear().toString() + ' - ' + (f.getMonth() +1).toString() + f.getDate().toString() + f.getHours() + f.getMinutes() + f.getSeconds() + ' - ',
+        //priority : '2'
+    }                  
+});
+
+function foo(){
+document.getElementById('nc-button').click();
+};
+</script>
+</head>
+<body onload="foo();">
+<div a href='#' id='nc-button'></div>
+</body>
+</html>
+]]></Content>
+</Module>
