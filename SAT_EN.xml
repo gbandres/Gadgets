@@ -111,7 +111,7 @@ border:0px none;
  
 <div class='caja' id='asistencia'>
  <div class='caja1'>
- <div class='boton' gh='cm' role='button' style='-webkit-user-select: none;' tabindex='0'><a target='_blank' href='https://plussupport.gruposese.com/Tickets/Create'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png' alt='Get support' style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='position:absolute; left:35px; min-height: 28px; vertical-align: middle; display: block;'>REQUESTS</span></a></div>
+ <div class='boton' gh='cm' role='button' style='-webkit-user-select: none;' tabindex='0'><a target='_blank' href='https://support.gruposese.com/plugins/servlet/desk'><img src='https://sites.google.com/a/gruposese.com/media/config/pagetemplates/iconos/asistencia.png' alt='Get support' style='border:0px none; float: left; display: block; margin-top: 3px; margin-left: 3px;'><span style='position:absolute; left:35px; min-height: 28px; vertical-align: middle; display: block;'>REQUESTS</span></a></div>
  </div>
 </div>
    
